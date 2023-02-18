@@ -4,6 +4,7 @@ import { getCookie, setCookie } from 'cookies-next';
 import NextApp, { AppProps, AppContext } from 'next/app';
 import Head from 'next/head';
 import { useState } from 'react';
+import '../styles/mantineBase.css';
 import '../styles/globals.css';
 
 export default function App(props: AppProps & { colorScheme: ColorScheme }) {
