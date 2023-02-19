@@ -1,9 +1,11 @@
-import { Button } from '@mantine/core';
+import { Button, useMantineTheme } from '@mantine/core';
+import { IconAward, IconTrash, IconUser } from '@tabler/icons-react';
 import Link from 'next/link';
 import { ColorSchemeToggle } from 'src/components/ColorSchemeToggle/ColorSchemeToggle';
 import { Welcome } from 'src/components/Welcome/Welcome';
 
 export default function HomePage() {
+  const theme = useMantineTheme();
   return (
     <>
       <Welcome />
@@ -106,6 +108,16 @@ export default function HomePage() {
       </Button>
       <Button className="rounded bg-rose-500 px-2 py-1 text-white shadow-lg shadow-rose-500/50">
         Submit
+      </Button>
+      <IconAward
+        size={36} // set custom `width` and `height`
+        color="red" // set `stroke` color
+        stroke={3} // set `stroke-width`
+        strokeLinejoin="miter"
+      />
+      <IconUser size={36} color={theme.colors.gray[6]} />
+      <Button className=" bg-black" color="red" size="md" leftIcon={<IconTrash size={18} />}>
+        Delete
       </Button>
     </>
   );
