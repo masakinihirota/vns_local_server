@@ -1,10 +1,11 @@
+import '../styles/globals.css';
+
 import { MantineProvider, ColorScheme, ColorSchemeProvider } from '@mantine/core';
 import { NotificationsProvider } from '@mantine/notifications';
 import { getCookie, setCookie } from 'cookies-next';
 import NextApp, { AppProps, AppContext } from 'next/app';
 import Head from 'next/head';
 import { useState } from 'react';
-import '../styles/globals.css';
 
 export default function App(props: AppProps & { colorScheme: ColorScheme }) {
   const { Component, pageProps } = props;
@@ -19,7 +20,7 @@ export default function App(props: AppProps & { colorScheme: ColorScheme }) {
   return (
     <>
       <Head>
-        <title>Mantine next example</title>
+        <title>VNS</title>
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
         <link rel="shortcut icon" href="/favicon.svg" />
       </Head>
