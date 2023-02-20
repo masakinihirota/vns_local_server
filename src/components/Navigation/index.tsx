@@ -10,6 +10,7 @@ function MyApp() {
       </Navbar.Section>
 
       <Navbar.Section position="right">
+        {/* メニュー */}
         <Menu control={<Button variant="outline">More</Button>} menuPosition="end" closeOnItemClick>
           <Menu.Item>Settings</Menu.Item>
           <Menu.Item>Profile</Menu.Item>
