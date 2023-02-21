@@ -1,3 +1,4 @@
+// 参考例
 import { Navbar, Button, Menu } from '@mantine/core';
 
 function MyApp() {
