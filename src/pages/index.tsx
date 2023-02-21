@@ -1,8 +1,8 @@
 import { Button, useMantineTheme } from '@mantine/core';
 import { IconAward, IconTrash, IconUser } from '@tabler/icons-react';
 import Link from 'next/link';
-import { ColorSchemeToggle } from 'src/components/ColorSchemeToggle/ColorSchemeToggle';
-import { Welcome } from 'src/components/Welcome/Welcome';
+import { ColorSchemeToggle } from 'src/features/dark_light/ColorSchemeToggle/ColorSchemeToggle';
+import { Welcome } from 'src/features/Welcome/Welcome';
 
 export default function HomePage() {
   const theme = useMantineTheme();
