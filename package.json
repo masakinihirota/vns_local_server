@@ -11,7 +11,7 @@
     "export": "next build && next export",
     "lint": "next lint --dir src",
     "lint:fix": "next lint --dir src --fix",
-    "jest": "jest",
+    "jest": "jest --watchAll",
     "jest:watch": "jest --watch",
     "prettier:check": "prettier --check \"**/*.{ts,tsx}\"",
     "prettier:write": "prettier --write \"**/*.{ts,tsx}\"",
