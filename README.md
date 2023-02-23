@@ -1,4 +1,4 @@
 VNS
 values networking service
 
-TODO Supabase の追加
+<!-- TODO Supabase の追加 -->
